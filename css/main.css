@@ -1,137 +1,157 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-style: italic;  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-style: italic;  
   }
 a:hover {
-    color: slategrey;
-    text-decoration: none;
+  color: slategrey;
+  text-decoration: none;
   }
 /* start nav */
-.box--{
-   background-image: url(../img/istockphoto-1191941530-612x612.jpg);
-    background-size: 100% 100%;
-    height: 100vh;
-    width: 100%;
-}
 header a {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
   
-  header {
-    font-size: 25px;
-    padding: 0 20px;
-    background-color: black;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
+header {
+  font-size: 25px;
+  padding: 0 20px;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
   
-  #brand {
-    font-weight: bold;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-  }
+#brand {
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
   
-  #brand a {
-    color: white;
-  }
-  #brand a:hover{
-      color: #555;
-  }
+#brand a {
+  color: #da1212cc;
+}
+
+#brand a:hover{
+  color: #e05353cc;
+}
   
-  header ul {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+header ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
   
-  header ul a {
-    text-decoration: none;
-    color: white;
-  }
+header ul a {
+  text-decoration: none;
+  color: #e05353cc;
+}
+
+header ul a:hover{
+  color: #da1212cc;
+}
   
-  header ul li {
-    color: white;
-    padding: 5px;
-    margin-left: 10px;
-  }
+header ul li {
+  color: white;
+  padding: 5px;
+  margin-left: 10px;
+}
   
-  header ul li:hover {
-    background-color: #555;
-    color: white;
-  }
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
   
-  #hamburger-icon {
-    margin: auto 0;
-    display: none;
-    cursor: pointer;
-  }
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
   
-  #hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
   
-  .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
+.open .bar2 {
+  opacity: 0;
+}
   
-  .open .bar2 {
-    opacity: 0;
-  }
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
   
-  .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-  }
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
   
-  .open .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
   
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    height: calc(100vh - 50px);
-    width: 100%;
-  }
-  
-  .mobile-menu li {
-    margin-bottom: 10px;
-  }
-  .box-- .contant{
-    position: absolute;
-      top: 275px;
-      width: auto;
-      left: 437px;
-      color: white;
-  }
-  .box-- .contant p{
-    padding-left: 60px;
-  }
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.box-- .contant{
+  position: absolute;
+  top: 275px;
+  width: auto;
+  left: 437px;
+  color: white;
+}
+.box-- .contant p{
+  padding-left: 60px;
+}
+
+.box-- .contant{
+  position: relative;
+}
+
+.contant img{
+  height: 100vh;
+  width: 100%;
+}
+
+.contant .heading{
+  color: #e05353cc;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.contant .heading2{
+  color: #e05353cc;
+  position: absolute;
+  top: 57%;
+  width: 100%;
+  text-align: center;
+}
   
   @media only screen and (max-width: 950px) {
     header nav {
@@ -154,14 +174,14 @@ header a {
     header ul{
       background-color: black;
     }
-}
-@media only screen and (max-width: 700px) {
-  .box-- .contant{
-    top:300px;
-    left: 100px;
   }
-  
-}
+  @media only screen and (max-width: 700px) {
+    .box-- .contant{
+      top:300px;
+      left: 100px;
+    }
+    
+  }
 /* end nav */
 /* start about */
 #about{
@@ -220,6 +240,10 @@ header a {
 
 /* end service */
 /* start our team */
+.container{
+  width: 90%;
+  margin: auto;
+}
 #ourteam{
   padding: 50px 0;
 }
@@ -241,23 +265,21 @@ header a {
 }
 #reviews h1{
   padding: 10px;
-  color: #717171;
+  color: rgb(34, 32, 32);
   text-align: center;
 }
-/* Slideshow container */
+
 .slideshow-container {
   position: relative;
   background: #f1f1f1f1;
 }
 
-/* Slides */
 .mySlides {
   display: none;
   padding: 80px;
   text-align: center;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -272,26 +294,22 @@ header a {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
 
-/* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
     padding: 20px;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -303,17 +321,14 @@ header a {
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
 .active, .dot:hover {
   background-color: #717171;
 }
 
-/* Add an italic font style to all quotes */
 q {font-style: italic;}
 
-/* Add a blue color to the author */
 .author {color: cornflowerblue;}
-/* end reviws-------------------------------------------------------- */
+/* end reviws */
 /* start contact */
 #contact{
   padding: 50px 0;
@@ -330,7 +345,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #e05353cc;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -338,17 +353,15 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #d43030cc;
 }
 
-/* Style the container/contact section */
 #contact .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
 .column {
   float: left;
   width: 50%;
@@ -356,19 +369,16 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
 }
-
 /* end contact */
